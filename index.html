@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sitem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="sidebar">
+        <div class="sidebar-content">
+            <h2 id="programmer-text" style="display:none;">Programmer by BLODWHITE</h2>
+            <ul>
+                <li id="main-menu">Ana Menü</li>
+                <li id="chat-channel">Chat Kanalı</li>
+                <li id="anonymous-channel">Anonim Kanal</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="main-content">
+        <div id="intro-screen">
+            <div class="snowfall"></div>
+            <h1>BLODWHITE</h1>
+        </div>
+        
+        <div id="name-input">
+            <label for="username">Lütfen isminizi girin:</label>
+            <input type="text" id="username" placeholder="İsminizi girin...">
+            <button onclick="startChat()">Başla</button>
+        </div>
+
+        <div id="channels" style="display: none;">
+            <div id="chat-section" style="display: none;">
+                <h2>Chat Kanalı</h2>
+                <!-- Chat içeriği buraya gelecek -->
+            </div>
+            <div id="anonymous-section" style="display: none;">
+                <h2>Anonim Kanal</h2>
+                <!-- Anonim içeriği buraya gelecek -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
